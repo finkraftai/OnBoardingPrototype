@@ -7,6 +7,7 @@ import ClusterForm from './components/Cluster-ws/ClusterForm'
 import ClusterTable from './components/Cluster-ws/ClusterTable'
 import UserCluster from './components/User-cluster/UserCluster'
 import UpdateCluster from './components/Cluster-ws/UpdateCluster'
+import CreatePan from './components/Pan/CreatePan'
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
         <Route path='/createcluster' Component={ClusterForm}/>
         <Route path='/updatecluster/:id' Component={UpdateCluster}/>
         <Route path='/usercluster' Component={UserCluster}/>
+        <Route path='/createpan' Component={CreatePan}/>
+        <Route path='/updatepan' Component={UpdateCluster}/>
       </Routes>
     </div>
   )

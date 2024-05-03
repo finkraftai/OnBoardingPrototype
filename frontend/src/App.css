@@ -7,15 +7,30 @@
 .form{
   background-color: white;
   border-radius: 10px;
+  min-height: 500px;
 }
 .main{
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  width: 100%;
+  min-height: 100vh;
 }
 .cmain{
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
   width: 100%;
   min-height: 100vh;
 }
+.workspacename{
+  background-color:lightgrey;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+.dropdown-menu {
+  max-height: calc(100vh - 400px); /* Adjust the value as needed */
+  overflow-y: auto;
+}
+
 
 /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
 /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */

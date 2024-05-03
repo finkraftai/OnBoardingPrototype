@@ -21,47 +21,7 @@ const ClusterForm = () => {
       );
   }, []);
 
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-
-  //   // Convert workspace names to IDs
-  //   const workspaceIDs = selectedWorkspaces
-  //     .map((workspaceName) => {
-  //       const workspace = workspaceNames.find(
-  //         (workspace) => workspace.name === workspaceName
-  //       );
-  //       return workspace ? workspace.id : null;
-  //     })
-  //     .filter(Boolean);
-
-  //   // Prepare payload
-  //   const payload = {
-  //     name,
-  //     workspaces: workspaceIDs,
-  //   };
-
-  //   // POST request to your API
-  //   console.log(payload);
-  //   try {
-  //     const response = await fetch("http://127.0.0.1:5000/api/clusters", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(payload),
-  //     });
-
-  //     if (response.ok) {
-  //       nav("/clusters");
-  //       console.log("Cluster created successfully");
-  //       // Reset form fields if needed
-  //     } else {
-  //       console.error("Failed to create cluster");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error creating cluster:", error);
-  //   }
-  // };
+  
 
   const handleNameChange = (event) => {
     setName(event.target.value);
